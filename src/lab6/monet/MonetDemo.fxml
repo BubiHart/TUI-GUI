@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab6.monet.Controller">
+  <tabs>
+    <Tab text="MyBank Clients">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+          <children>
+            <ComboBox fx:id="comboBox" layoutX="28.0" layoutY="26.0" prefHeight="26.0" prefWidth="390.0" />
+            <TextArea fx:id="textArea" layoutX="28.0" layoutY="70.0" prefHeight="256.0" prefWidth="391.0" />
+            <TextField fx:id="textField" layoutY="345.0" prefHeight="28.0" prefWidth="600.0" text="      Choose a client name and  press &quot;Show&quot; button" />
+            <Button fx:id="buttonShow" layoutX="445.0" layoutY="26.0" mnemonicParsing="false" onAction="#handleButtonActionShow" prefHeight="25.0" prefWidth="130.0" text="Show">
+              <font>
+                <Font size="15.0" />
+              </font>
+            </Button>
+            <Button fx:id="buttonReport" layoutX="445.0" layoutY="70.0" mnemonicParsing="false" onAction="#handleButtonActionReport" prefHeight="25.0" prefWidth="131.0" text="Report">
+              <font>
+                <Font size="15.0" />
+              </font>
+            </Button>
+            <Button fx:id="buttonAbout" layoutX="445.0" layoutY="113.0" mnemonicParsing="false" onAction="#handleButtonActionAbout" prefHeight="25.0" prefWidth="131.0" text="About">
+              <font>
+                <Font size="15.0" />
+              </font>
+            </Button>
+          </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
